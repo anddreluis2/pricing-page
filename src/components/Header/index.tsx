@@ -12,21 +12,26 @@ export function Header() {
     return (
         <>
             <div className={styles.container}>
-                <h1>Pricing Plans</h1>
-                <p>Try it now for free</p>
+                <h5 style={{fontWeight:"600", fontStyle: "italic", marginBottom: "12px"}}>Pricing Plans:</h5>
+                <h2>Try it now for free</h2>
             </div>
             <div className={styles.wrapper}>
                 <span>Monthly</span>
                 <Switch
                     onChange={() => { toggleSubscriptionType() }}
                     checked={subscription}
+                    height={10}
+                    width={40}
+                    handleDiameter={20}
+                    onHandleColor="#b393ff"
+                    offHandleColor='#b393ff'
                     checkedIcon={false}
                     uncheckedIcon={false}
-                    offColor="#5e5e5e"
-                    onColor="#2f2f2f"
+                    offColor="#7740f9"
+                    onColor="#7740f9"
                 />
                 <span>Annually</span>
-                <p className={styles.subtitle}>(15% off)</p>
+                <span className={styles.subtitle}>(15% off)</span>
             </div>
         </>
 

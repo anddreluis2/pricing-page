@@ -5,8 +5,9 @@
 }
 
 .card {
+    border-radius: 6px;
     line-height: 32px;
-    background-color: #2f2f2f;
+    background-color: #7740f9;
     height: 100%;
     width: 25%;
     color: #fff;
@@ -17,7 +18,6 @@
 .container {
     margin-top: 50px;
     height: 525px;
-    border: solid 1px red;
     display: flex;
     justify-content: space-around;
 }
@@ -25,15 +25,29 @@
 button {
     margin-top: 260px;
     border-radius: 6px;
-    width: 75px;
+    width: 125px;
     height: 35px;
+    background-color: #b393ff;
+    color: #fff;
+    border: none;
 
     &:hover {
         cursor: pointer;
-        background-color: lightgray;
+        background-color: #7740f9;
+        color: #fff;
+        border: 1px solid #b393ff;
     }
 }
 
 li {
     list-style: none;
+    background-color: #7740f9;
+}
+
+h1 {
+    background-color: #7740f9;
+}
+
+p {
+    background-color: #7740f9;
 }

@@ -5,13 +5,14 @@ export function Cards() {
         <div className={styles.container}>
             <div className={styles.card}>
                 <h1>Free</h1>
-                <h3>R$ 0,00</h3>
+                <p>R$ 0,00</p>
                 <ul>
                     <li>2 repositories</li>
                     <li>5 members</li>
-                    <li>10 GB storage</li>
+                    <li>10GB storage</li>
+                    <li>Chatbot support</li>
                 </ul>
-                <button>Get Started</button>
+                <button>Get started</button>
             </div>
             <div className={styles.card}>
                 <h1>Plus</h1>
