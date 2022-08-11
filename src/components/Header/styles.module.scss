@@ -1,4 +1,18 @@
-.header {
+.container {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.wrapper {
     display: flex;
     justify-content: center;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+}
+h1 {
+    font-weight: 900;
 }

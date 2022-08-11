@@ -1,10 +1,21 @@
 import styles from './styles.module.scss'
+import Switch from "react-switch"
 
 export function Header() {
     return (
         <>
-            <h1 className={styles.header}>Pricing Plans</h1>
-            <h2 className={styles.header}>Try it now for free</h2>
+            <div className={styles.container}>
+                <h1>Pricing Plans</h1>
+                <p>Try it now for free</p>
+            </div>
+            <div className={styles.wrapper}>
+                <Switch
+                    onChange={() => { console.log("Aaaaa") }}
+                    checked={true}
+                    checkedIcon={false}
+                    uncheckedIcon={false}
+                />
+            </div>
         </>
 
     )

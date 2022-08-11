@@ -1,6 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card {
-    background-color: red;
-    height: 45%;
+    line-height: 32px;
+    background-color: #2f2f2f;
+    height: 100%;
     width: 25%;
     color: #fff;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.container {
+    margin-top: 50px;
+    height: 525px;
+    border: solid 1px red;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    margin-top: 260px;
+    border-radius: 6px;
+    width: 75px;
+    height: 35px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: lightgray;
+    }
+}
+
+li {
+    list-style: none;
 }
