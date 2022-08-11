@@ -1,3 +1,40 @@
-.header {
+*{
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+.container {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px; 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 600;
+}
+h1 {
+    font-weight: 900;
+}
+
+span {
+    font-size: 18px;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: 600;
+}
+
+.subtitle{
+    padding-left: 3px;
+    font-size: 12px;
     color: red;
+    margin-top: 3px;
 }
