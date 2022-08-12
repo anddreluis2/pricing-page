@@ -7,10 +7,8 @@
 .card {
     border-radius: 6px;
     line-height: 32px;
-    background-color: #7740f9;
     height: 100%;
     width: 25%;
-    color: #fff;
     text-align: center;
     border: 1px solid black;
 }
@@ -22,32 +20,31 @@
     justify-content: space-around;
 }
 
+.text {
+    margin-top: 150px;
+    p {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+}
+
 button {
-    margin-top: 260px;
+    margin-top: 110px;
     border-radius: 6px;
-    width: 125px;
-    height: 35px;
-    background-color: #b393ff;
-    color: #fff;
+    width: 225px;
+    height: 40px;
     border: none;
+    background-color: #7740f9;
+    color: #fff;
 
     &:hover {
         cursor: pointer;
-        background-color: #7740f9;
-        color: #fff;
-        border: 1px solid #b393ff;
+        background-color: #b393ff;
+        border: 1px solid #7740f9;
+        color: black;
     }
 }
 
 li {
     list-style: none;
-    background-color: #7740f9;
-}
-
-h1 {
-    background-color: #7740f9;
-}
-
-p {
-    background-color: #7740f9;
 }
