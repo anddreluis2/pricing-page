@@ -12,7 +12,7 @@ export function Header() {
     return (
         <>
             <div className={styles.container}>
-                <h5 style={{fontWeight:"600", fontStyle: "italic", marginBottom: "12px"}}>Pricing Plans:</h5>
+                <h5 style={{color:"#2b2b2b", fontWeight:"600", fontStyle: "italic", marginBottom: "12px"}}>Pricing Plans:</h5>
                 <h2>Try it now for free</h2>
             </div>
             <div className={styles.wrapper}>
