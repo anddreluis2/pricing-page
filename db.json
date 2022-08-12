@@ -8,7 +8,7 @@
             "members": "5 members",
             "storage": "10GB storage",
             "support": "ChatBot support",
-            "button-text": "Get Started"
+            "buttontext": "Get Started"
         },
         {
             "id": 2,
@@ -18,7 +18,7 @@
             "members": "15 members",
             "storage": "50GB storage",
             "support": "24/7 support",
-            "button-text": "Try it Now"
+            "buttontext": "Try it Now"
         },
         {
             "id": 3,
@@ -28,7 +28,7 @@
             "members": "Unlimited members",
             "storage": "10TB storage",
             "support": "24/7 support",
-            "button-text": "Try it Now"
+            "buttontext": "Try it Now"
         }
     ]
 }
