@@ -1,25 +1,26 @@
-import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import Switch from "react-switch"
 
-export function Header() {
-    const [subscription, setSubscription] = useState(false)
+interface IHeaderProps {
+    subscription: boolean | undefined,
+    setSubscription: any,
+    toggleSwitch: any,
+}
 
-    const toggleSubscriptionType = () => {
-        setSubscription(subscription == true ? false : true)
-        console.log("You changed the subscription!")
-    }
+export const Header: React.FC<IHeaderProps> = (props: IHeaderProps) => {
+    const { subscription, setSubscription, toggleSwitch } = props
+
     return (
-        <>
+        <div>
             <div className={styles.container}>
-                <h5 style={{color:"#2b2b2b", fontWeight:"600", fontStyle: "italic", marginBottom: "12px"}}>Pricing Plans:</h5>
+                <h5 style={{ color: "#2b2b2b", fontWeight: "600", fontStyle: "italic", marginBottom: "12px" }}>Pricing Plans:</h5>
                 <h2>Try it now for free</h2>
             </div>
             <div className={styles.wrapper}>
                 <span>Monthly</span>
                 <Switch
-                    onChange={() => { toggleSubscriptionType() }}
-                    checked={subscription}
+                    onChange={(value) => toggleSwitch(value)}
+                    checked={!!subscription}
                     height={10}
                     width={40}
                     handleDiameter={20}
@@ -33,7 +34,7 @@ export function Header() {
                 <span>Annually</span>
                 <span className={styles.subtitle}>(15% off)</span>
             </div>
-        </>
+        </div>
 
     )
 }
