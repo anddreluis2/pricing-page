@@ -18,13 +18,12 @@ export function Cards(subscription: any) {
         <div className={styles.container}>
             {
                 info.map((resp: any) => (
-                    <div className={styles.card} key={resp.id}>
+                    <div className={resp.id != "2" ? styles.card : styles.principal} key={resp.id}>
                         <h1>{resp.name}</h1>
                         <div className={styles.text}>
                             {subscription.subscription ?
                                 <div>
-                                    <p style={{ color: "red" }}><s>{resp.price}</s></p>
-                                    <p>{resp.discountprice}</p>
+                                    <p style={{ color: "red" }}>{resp.discountprice}</p>
                                 </div>
                                 :
                                 <p>{resp.price}</p>
