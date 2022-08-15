@@ -7,7 +7,7 @@ export function Cards(subscription: any) {
     const [info, setInfo] = useState<any>([])
 
     const getData = async () => {
-        const response = await axios.get("http://localhost:3000/planos")
+        const response = await axios.get("https://fake-api-monest.herokuapp.com/planos")
         setInfo(response.data)
     }
     useEffect(() => {
