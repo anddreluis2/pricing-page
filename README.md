@@ -45,8 +45,5 @@ Para usar o projeto, siga estas etapas:
 Ao abrir a pasta do projeto, no terminal digitar:
 "yarn dev" caso use yarn.
 "npm run dev" caso use npm.
-E assim o projeto será inicializado no http://127.0.0.1/ como padrão.
-Para exibir os dados do projeto é necessario rodar em um terminal o JSON-SERVER (FAKE API com dados mockados)
-Para isso, abra o terminal e digite: "npx json-server --watch db.json".
-Pronto! A API está será iniciada no http://localhost:3000/planos e a aplicação estará funcionando!
+Pronto! Assim o projeto será inicializado no http://127.0.0.1/ como padrão.
  ```
