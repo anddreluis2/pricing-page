@@ -1,6 +1,5 @@
-*{
+* {
     font-family: sans-serif;
-    background-color: rgba(255, 255, 255, 0.575);
 }
 
 .container {
@@ -8,8 +7,8 @@
     font-size: 20px;
     font-weight: 800;
     display: inline-block;
-    margin-left: 50px;
-    margin-top: 20px; 
+    margin-left: 140px;
+    margin-top: 20px;
 }
 
 .wrapper {
@@ -17,10 +16,11 @@
     justify-content: center;
 }
 
-p{
+p {
     font-size: 16px;
     font-weight: 600;
 }
+
 h1 {
     font-weight: 900;
 }
@@ -32,7 +32,7 @@ span {
     font-weight: 600;
 }
 
-.subtitle{
+.subtitle {
     padding-left: 3px;
     font-size: 12px;
     color: red;

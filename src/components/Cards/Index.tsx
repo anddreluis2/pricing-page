@@ -2,7 +2,7 @@ import styles from './styles.module.scss'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-export function Cards() {
+export function Cards(subscription: any) {
 
     const [info, setInfo] = useState<any>([])
 
@@ -18,10 +18,16 @@ export function Cards() {
         <div className={styles.container}>
             {
                 info.map((resp: any) => (
-                    <div className={styles.card} key={resp.id}>
+                    <div className={resp.id != "2" ? styles.card : styles.principal} key={resp.id}>
                         <h1>{resp.name}</h1>
                         <div className={styles.text}>
-                            <p>{resp.price}</p>
+                            {subscription.subscription ?
+                                <div>
+                                    <p style={{ color: "red" }}>{resp.discountprice}</p>
+                                </div>
+                                :
+                                <p>{resp.price}</p>
+                            }
                             <ul>
                                 <li>{resp.repositories}</li>
                                 <li>{resp.members}</li>
@@ -31,7 +37,6 @@ export function Cards() {
                         </div>
                         <button>{resp.buttontext}</button>
                     </div>
-
                 ))
             }
         </div >
