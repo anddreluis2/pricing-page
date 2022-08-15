@@ -23,7 +23,7 @@ export function Cards(subscription: any) {
                         <div className={styles.text}>
                             {subscription.subscription ?
                                 <div>
-                                    <p style={{ color: "red" }}>{resp.discountprice}</p>
+                                    <p style={{ color: "#540bfd" }}>{resp.discountprice}</p>
                                 </div>
                                 :
                                 <p>{resp.price}</p>
@@ -35,7 +35,7 @@ export function Cards(subscription: any) {
                                 <li>{resp.support}</li>
                             </ul>
                         </div>
-                        <button>{resp.buttontext}</button>
+                        <a target="blank" href="https://monest.com.br/">  <button>{resp.buttontext}</button> </a>
                     </div>
                 ))
             }
