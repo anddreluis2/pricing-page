@@ -7,6 +7,9 @@
 Descrição
 <p>O projeto consiste em uma tela com dois componentes principais, o Header (com titulos e o Switch Button) e os cards com as informações sobre os planos.</p>
 
+<h3>Link do deploy: </h3>
+<p> https://test-pricing-page.vercel.app/ </p>
+
 <h3>💻 Tecnologias utilizadas:</h3>
 
 [React](https://pt-br.reactjs.org/docs/getting-started.html)<br/>
