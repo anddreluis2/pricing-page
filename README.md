@@ -15,6 +15,9 @@ Descrição
 [React](https://pt-br.reactjs.org/docs/getting-started.html)<br/>
 [Vite](https://vitejs.dev/)<br/>
 [Axios](https://axios-http.com/)<br/>
+[SASS](https://sass-lang.com/)<br/>
+[CSS Modules](https://github.com/css-modules/css-modules)<br/>
+
 [JSON-SERVER](https://www.npmjs.com/package/json-server)<br/>
 
 
